@@ -27,20 +27,22 @@ function MarketPlaceUpdateSubPartner(request) {
 		"SubPartnerType": request.SubPartnerType,
 		"SubPartnerId": request.SubPartnerId,
 		"Name": request.Name,
+		"BranchName": request.Name,
 		"ContactInfo": {
 			"Country": request.ContactInfoCountry,
 			"City": request.ContactInfoCity,
 			"Address": request.ContactInfoAddress,
 			"BusinessPhone": request.ContactInfoBusinessPhone,
-			"MobilePhone": request.ContactInfoMobilePhone
+			"MobilePhone": request.ContactInfoMobilePhone,
+			"Email":request.ContactInfoEmail,
+			"InvoiceEmail":request.ContactInfoInvoiceEmail
 		},
 		"FinancialInfo": {
 			"IdentityNumber": request.FinancialInfoIdentityNumber,
 			"TaxOffice": request.FinancialInfoTaxOffice,
 			"TaxNumber": request.FinancialInfoTaxNumber,
 			"BankName": request.FinancialInfoBankName,
-			"IBAN":request.FinancialInfoIBAN,
-			"AccountName": request.FinancialInfoAccountName,
+			"IBAN":request.FinancialInfoIBAN
 		}
         };
 

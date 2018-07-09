@@ -99,6 +99,14 @@ exports.api
         console.log(err)
     })
 })
+.post("/MarketPlaceWdTicketMpSale3DSecure", (req, res) => {
+    console.log(req);
+       wirecard.MarketPlaceWdTicketMpSale3DSecure(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
 .post("/MarketPlaceReleasePayment", (req, res) => {
     console.log(req);
        wirecard.MarketPlaceReleasePayment(req.body).then(requestResult => {
@@ -131,6 +139,7 @@ exports.api
         console.log(err)
     })
 })
+
 .post("/WDTicketSaleURLProxy", (req, res) => {
     console.log(req);
        wirecard.WDTicketSaleURLProxy(req.body).then(requestResult => {
@@ -155,3 +164,24 @@ exports.api
         console.log(err)
     })
 })
+.post("/SubScriberChangePrice", (req, res) => {
+    console.log(req);
+       wirecard.SubScriberChangePrice(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
+
+
+
+.post("/UrlCCTokenize", (req, res)=>{
+    console.log(req);
+       wirecard.UrlCCTokenize(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
+
+

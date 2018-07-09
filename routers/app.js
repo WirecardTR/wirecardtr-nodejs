@@ -5,6 +5,8 @@ const parseString = require('xml2js').parseString;
 const Guid = require("guid");
 
 const helpers = require("../helpers/index");
+
+const object2XML = require("../helpers/Object2XML");
 const settings = require("../settings");
 const wirecard = require("../wirecard/index");
 
@@ -78,6 +80,14 @@ exports.app
     
     })
 })
+.get("/MarketPlaceWdTicketMpSale3DSecure", (req, res)=>{
+    res.render("MarketPlaceWdTicketMpSale3DSecure", {
+    
+    })
+})
+
+
+
 .get("/MarketPlaceReleasePayment", (req, res)=>{
     res.render("MarketPlaceReleasePayment", {
     
@@ -103,7 +113,23 @@ exports.app
     
     })
 })
+.get("/SubScriberChangePrice", (req, res)=>{
+    res.render("SubScriberChangePrice", {
+    
+    })
+})
+.get("/CCTokenize", (req, res)=>{
+    res.render("CCTokenize", {
+    
+    })
+})
+.get("/UrlCCTokenize", (req, res)=>{
+    res.render("UrlCCTokenize", {
+    
+    })
+})
 .get("/Success", (req, res)=>{
+    
     res.render("Success", {
     
     })
@@ -114,3 +140,28 @@ exports.app
     })
 })
 
+.post("/CCTokenize", (req, res) => {
+    console.log(req);
+       wirecard.CCTokenize(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
+
+ .post("/fail", (req, res)=>{
+    var body = object2XML(req.body, "authResponse");
+    console.log(req.body);
+    res.render("fail", {
+        status: "İşlem Başarısız",
+        results: body
+    })
+ })
+ .post("/success", (req, res)=>{
+    var body = object2XML(req.body, "authResponse");
+    console.log(req.body);
+    res.render("success", {
+        status: "İşlem Başarılı",
+        results: body
+    })
+ })

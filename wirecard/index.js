@@ -16,6 +16,12 @@ const MarketPlaceMpSale = require("./MarketPlaceMpSale");
 const MarketPlaceReleasePayment = require("./MarketPlaceReleasePayment");
 const TransactionQueryByOrderId = require("./TransactionQueryByOrderId");
 const TransactionQueryByMPAY = require("./TransactionQueryByMPAY");
+const MarketPlaceWdTicketMpSale3DSecure = require("./MarketPlaceWdTicketMpSale3DSecure");
+const SubScriberChangePrice = require("./SubScriberChangePrice");
+const UrlCCTokenize= require("./UrlCCTokenize");
+const CCTokenize = require("./CCTokenize");
+
+
 
 module.exports = { 
     ApiPlus:ApiPlus,
@@ -35,7 +41,10 @@ module.exports = {
     MarketPlaceMpSale:MarketPlaceMpSale,
     MarketPlaceReleasePayment:MarketPlaceReleasePayment,
     TransactionQueryByOrderId:TransactionQueryByOrderId,
-    TransactionQueryByMPAY:TransactionQueryByMPAY
+    TransactionQueryByMPAY:TransactionQueryByMPAY,
+    MarketPlaceWdTicketMpSale3DSecure:MarketPlaceWdTicketMpSale3DSecure,
+    SubScriberChangePrice:SubScriberChangePrice,
+    UrlCCTokenize:UrlCCTokenize,
+    CCTokenize:CCTokenize
 
-    
 }

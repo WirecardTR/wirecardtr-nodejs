@@ -1,0 +1,43 @@
+    {{> head}}
+<h2>Wirecard Ortak Ödeme Sayfası 3D Secure İle Ödeme</h2>
+<fieldset>
+    <legend><label style="font-weight:bold;width:250px;">Ödeme Bilgileri</label></legend>
+    <label style="font-weight:bold;">Servis Adı &nbsp; :   &nbsp; </label> WDTicket<br>
+    <label style="font-weight:bold;">Operasyon Adı &nbsp; :&nbsp; </label> MPSale3DSECWithUrl <br>
+    <label style="font-weight:bold;">UserCode  &nbsp;:  &nbsp;</label> Wirecard tarafından verilen değer <br>
+    <label style="font-weight:bold;">Pin &nbsp;:  &nbsp;</label> Wirecard tarafından verilen değer <br>
+    <label style="font-weight:bold;">Fiyat &nbsp;:  &nbsp;</label> 0,01 TL <br>
+    <label style="font-weight:bold;">MPAY &nbsp;:  &nbsp;</label> Benzersiz işlem numarası. Bu parametre işlem sonucunda aynen bize geri gönderilir. <br>
+    <label style="font-weight:bold;">İşlem İçeriği &nbsp;:  &nbsp;</label>Bilgisayar Ödemesi <br>
+    <label style="font-weight:bold;">Comission Rate &nbsp;:  &nbsp;</label>1 <br>
+    <label style="font-weight:bold;">Açıklama &nbsp;:  &nbsp;</label>Ödeme işleminin tanımı <br>
+    <label style="font-weight:bold;">Ekstra Parametre &nbsp;:  &nbsp;</label>Bu alanın boş olarak gönderilmesi gerekmektedir. <br>
+</fieldset>
+<br />
+<br />
+<div class="form-horizontal">
+ <fieldset>
+      
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="">  SubPartnerId: </label>
+            <div class="col-md-4">
+                <input value="" name="subPartnerId" class="form-control input-md">
+            </div>
+        </div>
+       
+    </fieldset>
+    <!-- Button -->
+    <div class="form-group">
+        <label class="col-md-4 control-label" for=""></label>
+        <div class="col-md-4">
+            <button type="submit" id="btnSubmit" name="" class="btn btn-danger"> Ortak Ödeme Sayfası ile Ödeme Yap</button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+  <pre id="result">
+
+    </pre>
+          <script src="/js/MarketPlaceWdTicketMpSale3DSecure.js"></script>
+    {{> footer}}

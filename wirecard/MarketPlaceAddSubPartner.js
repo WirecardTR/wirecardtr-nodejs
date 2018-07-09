@@ -26,12 +26,15 @@ function MarketPlaceAddSubPartner(request) {
 		"UniqueId": Guid.raw(),
 		"SubPartnerType": request.SubPartnerType,
 		"Name": request.Name,
+		"BranchName": request.BranchName,
 		"ContactInfo": {
 			"Country": request.ContactInfoCountry,
 			"City": request.ContactInfoCity,
 			"Address": request.ContactInfoAddress,
 			"BusinessPhone": request.ContactInfoBusinessPhone,
-			"MobilePhone": request.ContactInfoMobilePhone
+			"MobilePhone": request.ContactInfoMobilePhone,
+			"Email":request.ContactInfoEmail,
+			"InvoiceEmail":request.ContactInfoInvoiceEmail
 		},
 		"FinancialInfo": {
 			"IdentityNumber": request.FinancialInfoIdentityNumber,
@@ -39,7 +42,6 @@ function MarketPlaceAddSubPartner(request) {
 			"TaxNumber": request.FinancialInfoTaxNumber,
 			"BankName": request.FinancialInfoBankName,
 			"IBAN":request.FinancialInfoIBAN,
-			"AccountName": request.FinancialInfoAccountName,
 		}
         };
 
