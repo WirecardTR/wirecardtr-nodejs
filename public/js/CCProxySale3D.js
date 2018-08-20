@@ -37,6 +37,8 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CardTokenizationValidityPeriod:0,
         MPAY:"", 
         Port:"001",
+        ErrorURL:"http://localhost:3000/Fail",
+        SuccessURL:"http://localhost:3000/Success",
         IPAddress:"195.142.102.58",
         PaymentContent:"BLGSYR01",
         InstallmentCount:installmentCount,

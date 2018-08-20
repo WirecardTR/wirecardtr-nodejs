@@ -35,7 +35,7 @@ function CCProxySale3D(request) {
                 "RequestType": request.CardTokenizationRequestType,
                 "CustomerId": request.CardTokenizationCustomerId,
                 "ValidityPeriod": request.CardTokenizationValidityPeriod,
-                "CCTokenId": Guid.raw(),
+                "CCTokenId": "",
             },
             "MPAY": request.MPAY,
             "Port": request.Port,

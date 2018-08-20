@@ -3,13 +3,12 @@ const express = require("express");
 const axios = require("axios");
 const parseString = require('xml2js').parseString;
 const Guid = require("guid");
-
+const crypto = require("crypto");
 const helpers = require("../helpers/index");
 
 const object2XML = require("../helpers/Object2XML");
 const settings = require("../settings");
 const wirecard = require("../wirecard/index");
-
 exports.app = express.Router();
 
 exports.app
@@ -160,6 +159,13 @@ exports.app
  .post("/success", (req, res)=>{
     var body = object2XML(req.body, "authResponse");
     console.log(req.body);
+    var settingHashKey=settings.hashKey;
+    var hashText =req.body.StatusCode+req.body.LastTransactionDate+req.body.MPAY+req.body.OrderId+settingHashKey;
+    const hashedText = crypto.createHash('sha1').update(hashText, 'iso-8859-9').digest('base64');
+    if(req.body.HashParam==hashedText)
+    {
+        console.log("Gelen Hash değerinin doğru hesaplanmış olması işlem güvenliği açısından önemlidir !");
+    }
     res.render("success", {
         status: "İşlem Başarılı",
         results: body
