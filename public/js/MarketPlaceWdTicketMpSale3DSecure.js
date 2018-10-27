@@ -2,7 +2,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
    
    
     var subPartnerId=document.getElementsByName("subPartnerId")[0].value;
-
+    var currencyCode=document.getElementsByName("currencyCode")[0].value;
    
     if (!subPartnerId ) return alert("Eksik alanlar var !");
 
@@ -22,6 +22,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         ServiceType: "WDTicket",
         OperationType:"MPSale3DSECWithUrl",
         Mpay:"",
+        CurrencyCode:currencyCode,
         ExtraParam:"",
         Description:"Bilgisayar",
         ErrorURL:"http://localhost:3000/Fail",

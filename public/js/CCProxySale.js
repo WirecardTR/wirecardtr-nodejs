@@ -6,6 +6,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
     var expireMonth=document.getElementsByName("expireMonth")[0].value;
     var cvv=document.getElementsByName("cvv")[0].value;
     var installmentCount=document.getElementsByName("installmentCount")[0].value;
+    var currencyCode=document.getElementsByName("currencyCode")[0].value;
 
 
    
@@ -31,6 +32,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CreditCardInfoExpireYear:expireYear,
         CreditCardInfoExpireMonth:expireMonth,
         CreditCardInfoCvv:cvv,
+        CurrencyCode:currencyCode,
         CreditCardInfoPrice:1,//0,01 TL
         CardTokenizationRequestType:0,
         CardTokenizationCustomerId:"1",

@@ -38,6 +38,7 @@ function CCProxySale3D(request) {
                 "CCTokenId": "",
             },
             "MPAY": request.MPAY,
+            "CurrencyCode": request.CurrencyCode,
             "Port": request.Port,
             "ErrorURL": request.ErrorURL,
             "SuccessURL": request.SuccessURL,

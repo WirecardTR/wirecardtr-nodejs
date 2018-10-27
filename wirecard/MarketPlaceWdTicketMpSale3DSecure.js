@@ -24,6 +24,7 @@ function MarketPlaceWdTicketMpSale3DSecure(request) {
                 "Pin": settings.pin
             },
             "MPAY": request.Mpay,
+            "CurrencyCode": request.CurrencyCode,
             "ExtraParam": request.ExtraParam,
             "Description":request.Description,
             "ErrorURL": request.ErrorURL,

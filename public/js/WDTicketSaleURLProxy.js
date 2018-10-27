@@ -19,6 +19,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         OperationType:"SaleURLProxy"   ,
         Price:1,// 0.01 TL
         MPAY:"",
+        CurrencyCode:"TRY",
         ErrorURL:"http://localhost:3000/Fail",
         SuccessURL:"http://localhost:3000/Success",
         ExtraParam:"",

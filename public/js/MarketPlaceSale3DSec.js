@@ -7,7 +7,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
     var cvv=document.getElementsByName("cvv")[0].value;
     var installmentCount=document.getElementsByName("installmentCount")[0].value;
     var subPartnerId=document.getElementsByName("subPartnerId")[0].value;
-
+    var currencyCode=document.getElementsByName("currencyCode")[0].value;
    
     if (!creditCardNo || !ownerName || !expireYear || !expireMonth || !cvv || !installmentCount || !subPartnerId ) return alert("Eksik alanlar var !");
 
@@ -36,12 +36,13 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CardTokenizationCustomerId:"1",
         CardTokenizationValidityPeriod:0,
         Mpay:"",
+        CurrencyCode:currencyCode,
         ExtraParam:"",
         Description:"Bilgisayar",
         IPAddress:"127.0.0.1",
         Port:"01",
-        ErrorURL:"http://localhost:3000//Fail",
-        SuccessURL:"http://localhost:3000//Success",
+        ErrorURL:"http://localhost:3000/Fail",
+        SuccessURL:"http://localhost:3000/Success",
         InstallmentCount:installmentCount,
         CommissionRate:100, //%1
         SubPartnerId:subPartnerId, 

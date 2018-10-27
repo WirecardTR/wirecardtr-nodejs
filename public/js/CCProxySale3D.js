@@ -6,7 +6,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
     var expireMonth=document.getElementsByName("expireMonth")[0].value;
     var cvv=document.getElementsByName("cvv")[0].value;
     var installmentCount=document.getElementsByName("installmentCount")[0].value;
-
+    var currencycode=document.getElementsByName("currencyCode")[0].value;
 
    
     if (!creditCardNo || !ownerName || !expireYear || !expireMonth || !cvv || !installmentCount ) return alert("Eksik alanlar var !");
@@ -36,6 +36,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CardTokenizationCustomerId:"1",
         CardTokenizationValidityPeriod:0,
         MPAY:"", 
+        CurrencyCode:currencycode,
         Port:"001",
         ErrorURL:"http://localhost:3000/Fail",
         SuccessURL:"http://localhost:3000/Success",
