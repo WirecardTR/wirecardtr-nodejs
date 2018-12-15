@@ -42,6 +42,11 @@ function MarketPlaceAddSubPartner(request) {
 			"TaxNumber": request.FinancialInfoTaxNumber,
 			"BankName": request.FinancialInfoBankName,
 			"IBAN":request.FinancialInfoIBAN,
+		},
+		"AuthSignatory": {
+			"Name": request.AuthSignatoryName,
+			"Surname": request.AuthSignatorySurname,
+			"BirthDate": request.AuthSignatoryBirthDate,	
 		}
         };
 

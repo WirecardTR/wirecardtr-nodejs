@@ -1,3 +1,4 @@
+
 const settings = {
     userCode : process.env.WIRECARD_USER_CODE || "",
     pin : process.env.WIRECARD_PIN || "",
@@ -10,9 +11,9 @@ function errorHandler(text){
     throw new Error(text, textColor)
 }
 
-if(!settings.userCode) return errorHandler("userCode bulunamadı! Lütfen settings.js dosyasını düzenleyiniz...");
-if(!settings.pin) return errorHandler("pin bulunamadı! Lütfen settings.js dosyasını düzenleyiniz...");
-if(!settings.baseURL) return errorHandler("base url bulunamadı. Lütfen settings.js dosyasını düzenleyiniz...");
+// if(!settings.userCode) return errorHandler("userCode bulunamadı! Lütfen settings.js dosyasını düzenleyiniz...");
+// if(!settings.pin) return errorHandler("pin bulunamadı! Lütfen settings.js dosyasını düzenleyiniz...");
+// if(!settings.baseURL) return errorHandler("base url bulunamadı. Lütfen settings.js dosyasını düzenleyiniz...");
 
 
 module.exports = settings

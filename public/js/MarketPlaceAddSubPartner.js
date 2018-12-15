@@ -5,7 +5,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
     var identityNumber = document.getElementsByName("identityNumber")[0].value;
     var emailAddress = document.getElementsByName("emailAddress")[0].value;
     var invoiceEmailAddress = document.getElementsByName("invoiceEmailAddress")[0].value;
-   
+    var date= new Date().toISOString().slice(0,10); 
     if (!subPartnerType || !name || !mobilePhoneNumber || !identityNumber || !emailAddress ) return alert("Eksik alanlar var !");
 
     var target = e.currentTarget;
@@ -38,8 +38,10 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         FinancialInfoTaxNumber:"11111111111",
         FinancialInfoBankName:"0012",
         FinancialInfoIBAN:"TR330006100519786457841326",
-       
-       
+        AuthSignatoryName:"Ahmet",
+        AuthSignatorySurname:"Yılmaz",
+        AuthSignatoryBirthDate:date,
 
+        
     }))
 })
