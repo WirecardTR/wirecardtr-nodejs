@@ -75,9 +75,25 @@ exports.api
         console.log(err)
     })
 })
+.post("/MarketPlaceAddSubPartnerOnlineVerify", (req, res) => {
+    console.log(req);
+       wirecard.MarketPlaceAddSubPartnerOnlineVerify(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
 .post("/MarketPlaceUpdateSubPartner", (req, res) => {
     console.log(req);
        wirecard.MarketPlaceUpdateSubPartner(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
+.post("/MarketPlaceUpdateSubPartnerOnlineVerify", (req, res) => {
+    console.log(req);
+       wirecard.MarketPlaceUpdateSubPartnerOnlineVerify(req.body).then(requestResult => {
         res.json(requestResult)
     }).catch(err => {
         console.log(err)

@@ -6,14 +6,14 @@ const soap = require('soap');
 var js2xmlparser = require("js2xmlparser");
 
 /**
- * Pazaryeri oluşturma xml servis çağrısının yapıldığı metodu temsil etmektedir.
+ * Pazaryeri üye işyeri güncelleme xml servis çağrısının yapıldığı metodu temsil etmektedir.
  * Bu metodun request parametresi form içerisinden girilen değerleri temsil etmektedir.
- * request alanlarına public/js/MarketPlaceAddSubPartner.js içerisinden ulaşabilirsiniz.
+ * request alanlarına public/js/MarketPlaceUpdateSubPartner.js içerisinden ulaşabilirsiniz.
  * Post işlemi routers/api.js dosyası içerisinden yapılmaktadır.
- * Response mesajı xml formatında ekranda gösterilmektedir. 
+ * Response mesajı xml formatında ekranda gösterilmektedir.
  * @param {*} request 
  */
-function MarketPlaceAddSubPartner(request) {
+function MarketPlaceUpdateSubPartnerOnlineVerify(request) {
     return new Promise((resolve, reject) => {
 
         var obj= {
@@ -25,8 +25,9 @@ function MarketPlaceAddSubPartner(request) {
 		},
 		"UniqueId": Guid.raw(),
 		"SubPartnerType": request.SubPartnerType,
+		"SubPartnerId": request.SubPartnerId,
 		"Name": request.Name,
-		"BranchName": request.BranchName,
+		"BranchName": request.Name,
 		"ContactInfo": {
 			"Country": request.ContactInfoCountry,
 			"City": request.ContactInfoCity,
@@ -42,6 +43,8 @@ function MarketPlaceAddSubPartner(request) {
 			"TaxNumber": request.FinancialInfoTaxNumber,
 			"BankName": request.FinancialInfoBankName,
 			"IBAN":request.FinancialInfoIBAN,
+			"TradeRegisterNumber":request.FinancialInfoTradeRegisterNumber,
+			"TradeChamber":request.FinancialInfoTradeChamber,
 		},
 		"AuthSignatory": {
 			"Name": request.AuthSignatoryName,
@@ -67,4 +70,4 @@ function MarketPlaceAddSubPartner(request) {
 	})
 
 }
-module.exports = MarketPlaceAddSubPartner;
+module.exports = MarketPlaceUpdateSubPartnerOnlineVerify;

@@ -32,7 +32,7 @@ function MarketPlaceDeactiveSubPartner(request) {
 
 
 
-
+        process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
         axios({
             url: settings.baseURL,
             method: 'POST',

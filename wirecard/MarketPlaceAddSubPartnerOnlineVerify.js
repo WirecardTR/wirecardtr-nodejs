@@ -13,7 +13,7 @@ var js2xmlparser = require("js2xmlparser");
  * Response mesajı xml formatında ekranda gösterilmektedir. 
  * @param {*} request 
  */
-function MarketPlaceAddSubPartner(request) {
+function MarketPlaceAddSubPartnerOnlineVerify(request) {
     return new Promise((resolve, reject) => {
 
         var obj= {
@@ -42,6 +42,8 @@ function MarketPlaceAddSubPartner(request) {
 			"TaxNumber": request.FinancialInfoTaxNumber,
 			"BankName": request.FinancialInfoBankName,
 			"IBAN":request.FinancialInfoIBAN,
+			"TradeRegisterNumber":request.FinancialInfoTradeRegisterNumber,
+			"TradeChamber":request.FinancialInfoTradeChamber,
 		},
 		"AuthSignatory": {
 			"Name": request.AuthSignatoryName,
@@ -67,4 +69,4 @@ function MarketPlaceAddSubPartner(request) {
 	})
 
 }
-module.exports = MarketPlaceAddSubPartner;
+module.exports = MarketPlaceAddSubPartnerOnlineVerify;

@@ -9,7 +9,9 @@ const CCProxySale3D = require("./CCProxySale3D");
 const WDTicketSale3DURLProxy = require("./WDTicketSale3DURLProxy");
 const WDTicketSaleURLProxy = require("./WDTicketSaleURLProxy");
 const MarketPlaceAddSubPartner = require("./MarketPlaceAddSubPartner");
+const MarketPlaceAddSubPartnerOnlineVerify = require("./MarketPlaceAddSubPartnerOnlineVerify");
 const MarketPlaceUpdateSubPartner = require("./MarketPlaceUpdateSubPartner");
+const MarketPlaceUpdateSubPartnerOnlineVerify = require("./MarketPlaceUpdateSubPartnerOnlineVerify");
 const MarketPlaceDeactiveSubPartner = require("./MarketPlaceDeactiveSubPartner");
 const MarketPlaceSale3DSec = require("./MarketPlaceSale3DSec");
 const MarketPlaceMpSale = require("./MarketPlaceMpSale");
@@ -34,7 +36,9 @@ module.exports = {
     WDTicketSale3DURLProxy : WDTicketSale3DURLProxy,
     WDTicketSaleURLProxy : WDTicketSaleURLProxy,
     MarketPlaceUpdateSubPartner : MarketPlaceUpdateSubPartner,
+    MarketPlaceUpdateSubPartnerOnlineVerify : MarketPlaceUpdateSubPartnerOnlineVerify,
     MarketPlaceAddSubPartner : MarketPlaceAddSubPartner,
+    MarketPlaceAddSubPartnerOnlineVerify : MarketPlaceAddSubPartnerOnlineVerify,
     SendInformationSmsService : SendInformationSmsService,
     MarketPlaceDeactiveSubPartner:MarketPlaceDeactiveSubPartner,
     MarketPlaceSale3DSec:MarketPlaceSale3DSec,

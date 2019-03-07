@@ -48,7 +48,8 @@ function CCProxySale(request) {
         }
 
         var xml_body = js2xmlparser.parse("WIRECARD", obj);
-		console.log(xml_body);	
+        console.log(xml_body);	
+        process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
         axios({
             url: settings.baseURL,
             method: 'POST',
