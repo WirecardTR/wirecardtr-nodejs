@@ -22,6 +22,8 @@ const MarketPlaceWdTicketMpSale3DSecure = require("./MarketPlaceWdTicketMpSale3D
 const SubScriberChangePrice = require("./SubScriberChangePrice");
 const UrlCCTokenize= require("./UrlCCTokenize");
 const CCTokenize = require("./CCTokenize");
+const BinQuery = require("./BinQuery");
+
 
 
 
@@ -49,6 +51,7 @@ module.exports = {
     MarketPlaceWdTicketMpSale3DSecure:MarketPlaceWdTicketMpSale3DSecure,
     SubScriberChangePrice:SubScriberChangePrice,
     UrlCCTokenize:UrlCCTokenize,
+    BinQuery : BinQuery,
     CCTokenize:CCTokenize
 
 }

@@ -75,6 +75,14 @@ exports.api
         console.log(err)
     })
 })
+.post("/BinQuery", (req, res) => {
+    console.log(req);
+       wirecard.BinQuery(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
 .post("/MarketPlaceAddSubPartnerOnlineVerify", (req, res) => {
     console.log(req);
        wirecard.MarketPlaceAddSubPartnerOnlineVerify(req.body).then(requestResult => {

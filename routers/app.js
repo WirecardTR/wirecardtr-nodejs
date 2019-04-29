@@ -64,6 +64,11 @@ exports.app
     
     })
 })
+.get("/BinQuery", (req, res)=>{
+    res.render("BinQuery", {
+    
+    })
+})
 .get("/MarketPlaceAddSubPartnerOnlineVerify", (req, res)=>{
     res.render("MarketPlaceAddSubPartnerOnlineVerify", {
     
