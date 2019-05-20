@@ -69,6 +69,11 @@ exports.app
     
     })
 })
+.get("/MarketPlaceCreateSubPartner", (req, res)=>{
+    res.render("MarketPlaceCreateSubPartner", {
+    
+    })
+})
 .get("/MarketPlaceAddSubPartnerOnlineVerify", (req, res)=>{
     res.render("MarketPlaceAddSubPartnerOnlineVerify", {
     

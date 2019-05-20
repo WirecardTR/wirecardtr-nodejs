@@ -23,6 +23,8 @@ const SubScriberChangePrice = require("./SubScriberChangePrice");
 const UrlCCTokenize= require("./UrlCCTokenize");
 const CCTokenize = require("./CCTokenize");
 const BinQuery = require("./BinQuery");
+const MarketPlaceCreateSubPartner = require("./MarketPlaceCreateSubPartner");
+
 
 
 
@@ -52,6 +54,7 @@ module.exports = {
     SubScriberChangePrice:SubScriberChangePrice,
     UrlCCTokenize:UrlCCTokenize,
     BinQuery : BinQuery,
+    MarketPlaceCreateSubPartner : MarketPlaceCreateSubPartner,    
     CCTokenize:CCTokenize
 
 }

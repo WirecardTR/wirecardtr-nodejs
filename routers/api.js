@@ -83,6 +83,14 @@ exports.api
         console.log(err)
     })
 })
+.post("/MarketPlaceCreateSubPartner", (req, res) => {
+    console.log(req);
+       wirecard.MarketPlaceCreateSubPartner(req.body).then(requestResult => {
+        res.json(requestResult)
+    }).catch(err => {
+        console.log(err)
+    })
+})
 .post("/MarketPlaceAddSubPartnerOnlineVerify", (req, res) => {
     console.log(req);
        wirecard.MarketPlaceAddSubPartnerOnlineVerify(req.body).then(requestResult => {
