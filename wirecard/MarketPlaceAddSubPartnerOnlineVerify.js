@@ -27,6 +27,8 @@ function MarketPlaceAddSubPartnerOnlineVerify(request) {
 		"SubPartnerType": request.SubPartnerType,
 		"Name": request.Name,
 		"BranchName": request.BranchName,
+		"SuccessURL": request.SuccessURL,
+		"ErrorURL": request.ErrorURL,
 		"ContactInfo": {
 			"Country": request.ContactInfoCountry,
 			"City": request.ContactInfoCity,

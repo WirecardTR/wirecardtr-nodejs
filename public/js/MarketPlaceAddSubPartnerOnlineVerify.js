@@ -26,6 +26,8 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         SubPartnerType:subPartnerType,
         Name:name,
         BranchName:name,
+        SuccessURL:"https://www.test.com/Success",
+        ErrorURL:"https://www.test.com/Error",
         ContactInfoCountry :"TR",
         ContactInfoCity:"34",
         ContactInfoAddress :"Gayrettepe Mh. Yıldız Posta Cd. D Plaza No:52 K:6 34349 Beşiktaş istanbul",
