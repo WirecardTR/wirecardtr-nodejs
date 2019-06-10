@@ -30,6 +30,10 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CommissionRate:100, //%1
         Price:1,//0,01 TL
         SubPartnerId:subPartnerId, 
-        PaymentContent:"BLGSYR01"
+        PaymentContent:"BLGSYR01",
+        CustomerName:"ahmet",
+        CustomerSurname:"yılmaz",
+        CustomerEmail:"ahmet.yilmaz@gmail.com",
+        Language:"TR"
     }))
 })

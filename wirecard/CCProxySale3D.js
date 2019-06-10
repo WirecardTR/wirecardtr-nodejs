@@ -37,6 +37,12 @@ function CCProxySale3D(request) {
                 "ValidityPeriod": request.CardTokenizationValidityPeriod,
                 "CCTokenId": "",
             },
+            "CustomerInfo": {
+                "CustomerName": request.CustomerName,
+                "CustomerSurname": request.CustomerSurname,
+                "CustomerEmail": request.CustomerEmail,
+            },
+            "Language": request.Language,
             "MPAY": request.MPAY,
             "CurrencyCode": request.CurrencyCode,
             "Port": request.Port,

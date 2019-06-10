@@ -46,6 +46,10 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         InstallmentCount:installmentCount,
         CommissionRate:100, //%1
         SubPartnerId:subPartnerId, 
-        PaymentContent:"BLGSYR01"
+        PaymentContent:"BLGSYR01",
+        CustomerName:"ahmet",
+        CustomerSurname:"yılmaz",
+        CustomerEmail:"ahmet.yilmaz@gmail.com",
+        Language:"TR"
     }))
 })

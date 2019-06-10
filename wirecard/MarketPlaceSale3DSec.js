@@ -37,6 +37,12 @@ function MarketPlaceSale3DSec(request) {
                 "ValidityPeriod": request.CardTokenizationValidityPeriod,
                 "CCTokenId": "",
             },
+            "CustomerInfo": {
+                "CustomerName": request.CustomerName,
+                "CustomerSurname": request.CustomerSurname,
+                "CustomerEmail": request.CustomerEmail,
+            },
+            "Language": request.Language,
             "MPAY": request.Mpay,
             "CurrencyCode": request.CurrencyCode,
             "ExtraParam": request.ExtraParam,

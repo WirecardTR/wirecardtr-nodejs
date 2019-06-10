@@ -44,7 +44,11 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         PaymentContent:"BLGSYR01",
         InstallmentCount:installmentCount,
         Description:"Bilgisayar",
-        ExtraParam:""
+        ExtraParam:"",
+        CustomerName:"ahmet",
+        CustomerSurname:"yılmaz",
+        CustomerEmail:"ahmet.yilmaz@gmail.com",
+        Language:"TR"
        
     }))
 })

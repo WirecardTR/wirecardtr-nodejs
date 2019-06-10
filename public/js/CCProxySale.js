@@ -1,4 +1,4 @@
-document.getElementById("btnSubmit").addEventListener("click", function (e) {
+    document.getElementById("btnSubmit").addEventListener("click", function (e) {
    
     var creditCardNo=document.getElementsByName("creditCardNo")[0].value;
     var ownerName=document.getElementsByName("ownerName")[0].value;
@@ -43,7 +43,12 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         PaymentContent:"BLGSYR01",
         InstallmentCount:installmentCount,
         Description:"Bilgisayar",
-        ExtraParam:""
+        ExtraParam:"",
+        CustomerName:"ahmet",
+        CustomerSurname:"yılmaz",
+        CustomerEmail:"ahmet.yilmaz@gmail.com",
+        Language:"TR"
+        
        
     }))
 })

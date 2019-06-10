@@ -23,6 +23,12 @@ function WDTicketSale3DURLProxy(request) {
                 "UserCode":settings.userCode,
                 "Pin": settings.pin
             },
+            "CustomerInfo": {
+                "CustomerName": request.CustomerName,
+                "CustomerSurname": request.CustomerSurname,
+                "CustomerEmail": request.CustomerEmail,
+            },
+            "Language": request.Language,
             "Price":request.Price,  
             "MPAY": request.MPAY,
             "ErrorURL":request.ErrorURL,

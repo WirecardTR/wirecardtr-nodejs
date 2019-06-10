@@ -24,7 +24,11 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         SuccessURL:"http://localhost:3000/Success",
         ExtraParam:"",
         PaymentContent:"Bilgisayar",
-        Description:"BLGSYR01"
+        Description:"BLGSYR01",
+        CustomerName:"ahmet",
+        CustomerSurname:"yılmaz",
+        CustomerEmail:"ahmet.yilmaz@gmail.com",
+        Language:"TR"
     }))
 
    
