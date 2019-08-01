@@ -35,7 +35,8 @@ function WDTicketSale3DURLProxy(request) {
             "SuccessURL":request.SuccessURL,
             "ExtraParam": request.ExtraParam,
             "Description":request.Description,
-            "PaymentContent": request.PaymentContent
+            "PaymentContent": request.PaymentContent,
+            "InstallmentOptions":request.InstallmentOptions
         }
 
         var xml_body = js2xmlparser.parse("WIRECARD", obj);

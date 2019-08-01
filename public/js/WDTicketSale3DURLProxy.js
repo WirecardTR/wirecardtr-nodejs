@@ -30,7 +30,8 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CustomerName:"ahmet",
         CustomerSurname:"yılmaz",
         CustomerEmail:"ahmet.yilmaz@gmail.com",
-        Language:"TR"
+        Language:"TR",
+        InstallmentOptions:0
     }))
 
     // js2xmlparser.parseString(ajax.response, function (err, result) {
