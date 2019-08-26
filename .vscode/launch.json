@@ -12,7 +12,6 @@
             "program": "${workspaceFolder}\\server.js",
             "env": { },
             "console": "externalTerminal"
-
         }
     ]
 }
