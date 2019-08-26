@@ -3,7 +3,7 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
    
     var subPartnerId=document.getElementsByName("subPartnerId")[0].value;
     var currencyCode=document.getElementsByName("currencyCode")[0].value;
-   
+    
     if (!subPartnerId ) return alert("Eksik alanlar var !");
 
     var target = e.currentTarget;
@@ -34,6 +34,15 @@ document.getElementById("btnSubmit").addEventListener("click", function (e) {
         CustomerName:"ahmet",
         CustomerSurname:"yılmaz",
         CustomerEmail:"ahmet.yilmaz@gmail.com",
-        Language:"TR"
+        Language:"TR",
+        InstallmentOptions:0,
+        Inst0:110,
+        Inst3:130,
+        Inst6:160,
+        Inst9:190
+        
+        
+        
+        
     }))
 })

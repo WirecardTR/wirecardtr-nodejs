@@ -28,9 +28,17 @@ function MarketPlaceWdTicketMpSale3DSecure(request) {
                 "CustomerSurname": request.CustomerSurname,
                 "CustomerEmail": request.CustomerEmail,
             },
+            "CommissionRateList":{
+                "Inst0":request.Inst0,
+                "Inst3":request.Inst3,
+                "Inst6":request.Inst6,
+                "Inst9":request.Inst9
+            },
             "Language": request.Language,
             "MPAY": request.Mpay,
             "CurrencyCode": request.CurrencyCode,
+            "InstallmentOptions": request.InstallmentOptions,
+            
             "ExtraParam": request.ExtraParam,
             "Description":request.Description,
             "ErrorURL": request.ErrorURL,
