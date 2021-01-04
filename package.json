@@ -18,7 +18,7 @@
   "license": "MIT",
   "homepage": "https://github.com/WirecardTR/wirecardtr-nodejs#readme",
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.1",
     "cookie-parser": "^1.4.3",
     "dateformat": "^3.0.3",
